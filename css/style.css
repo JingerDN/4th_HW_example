@@ -1,0 +1,317 @@
+.header {
+  padding: 20px 81px 20px 81px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-20px);
+}
+.orange {
+  transition: all 0.4s linear;
+  opacity: 0;
+}
+.header:hover .orange {
+  opacity: 1;
+}
+/*------------------------SPRITES--------------------*/
+ul {
+  text-align: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sprite-btns li {
+  background: url("../img/sprite/white-icons.png");
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+}
+.sprite-btns .sprite-item2 {
+  background-position: -47px 0;
+}
+
+.sprite-btns .sprite-item3 {
+  background-position: -98px 0;
+}
+.sprite-btns li:hover {
+  background: url("../img/sprite/green-icons.png");
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+  cursor: pointer;
+}
+.sprite-btns .sprite-item2:hover {
+  background-position: -47px 0;
+  cursor: pointer;
+}
+
+.sprite-btns .sprite-item3:hover {
+  background-position: -98px 0;
+  cursor: pointer;
+}
+/*----------------------SPRITS END--------------------*/
+.jorney {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.jorney:hover {
+  color: #3cb878;
+}
+
+.right {
+  width: 370px;
+  height: 20px;
+  float: right;
+}
+.list {
+  float: left;
+}
+.row {
+  float: right;
+  margin-top: -20px;
+}
+.row a {
+  text-decoration: none;
+  color: #3cb878;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+  padding-right: 6px;
+}
+.row a:nth-of-type(1):before {
+  content: "Wellcome,  ";
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  padding-right: 6px;
+}
+.row a:nth-of-type(2):before {
+  content: "or  ";
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  padding-right: 6px;
+}
+body {
+  font-family: Verdana, SansSerif;
+  background-image: url("../img/rana-sawalha-364253-unsplash.png");
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+}
+
+.form {
+  width: 322px;
+  margin-top: 14px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+  margin-left: 62px;
+}
+.sign-up {
+  float: left;
+  text-decoration: none;
+  color: #434343;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  position: relative;
+}
+.log-in {
+  float: right;
+  text-decoration: none;
+  color: #3cb878;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+  position: relative;
+}
+a {
+  color: lightgray;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.container {
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.52);
+  width: 444px;
+  background-color: white;
+  margin: 119px auto 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  color: lightgray;
+  padding-bottom: 32px;
+}
+.container img {
+  width: 18px;
+  height: 18px;
+  transform: translateX(-212px);
+  position: relative;
+  top: 50px;
+}
+
+/*-----------------------INPUTS------------------------------*/
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  color: #434343;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  background-color: #ffffff;
+  width: 322px;
+  height: 46px;
+  padding-left: 17px;
+  margin-bottom: 15px;
+  margin-left: 62px;
+  margin-right: 60px;
+  transform: translateX(-10px);
+}
+
+.data-submit {
+  padding: 17px 100px 17px 100px;
+  color: white;
+  background-color: #3cb878;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  width: 345px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.data-submit:hover {
+  transition: all 0.5s;
+  color: #cccccc;
+  background-color: green;
+}
+.data-input input:focus {
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.21);
+}
+/*-----------------------TEXT--WITH--LINES----------------*/
+.text-with-lines {
+  position: relative;
+}
+.text-with-lines p {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 15px 10px;
+  background-color: #fff;
+}
+.text-with-lines:before,
+.text-with-lines:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  box-sizing: border-box;
+  border-top: 1px solid lightgray;
+  transform: translateY(55%);
+}
+.text-with-lines:before {
+  right: 50px;
+}
+.text-with-lines:after {
+  left: 50px;
+}
+/*------------------RED--&--BLUE-BUTTONS-----------------*/
+.left-btn {
+  display: inline-block;
+}
+.rigt-btn {
+  display: inline-block;
+}
+.social-buttons {
+  position: relative;
+  right: -63px;
+  top: -15px;
+  width: 322px;
+  height: auto;
+  margin-top: 15px;
+}
+.facebook {
+  padding-right: 17px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  border-radius: 3px;
+  background-color: #305db8;
+  width: 157px;
+  height: 46px;
+  border: none;
+  cursor: pointer;
+  text-align: right;
+}
+.google {
+  padding-right: 17px;
+  border-radius: 3px;
+  background-color: #df4a32;
+  width: 157px;
+  height: 46px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: right;
+  border: none;
+}
+.left-btn:before {
+  content: url("../img/facebook1.png");
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  padding: 13px 0 13px 20px;
+}
+.rigt-btn:before {
+  content: url("../img/G+.png");
+  width: 25px;
+  height: 16px;
+  position: absolute;
+  padding: 15px 0 15px 13px;
+}
+/*---------CHECK--BOX---------*/
+.recover {
+  color: #434343;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin-bottom: 28px;
+  position: relative;
+  transform: translateX(40px);
+}
+input[type="checkbox"] {
+  width: 21px;
+  height: 21px;
+  margin: 13px 13px 13px 13px;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  background-color: #ffffff;
+}
+label a {
+  text-decoration: none;
+  color: #3cb878;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  margin-left: 8px;
+}
+/*---------CHECK--BOX-END--------*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
